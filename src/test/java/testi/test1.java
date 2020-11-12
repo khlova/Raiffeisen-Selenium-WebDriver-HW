@@ -8,7 +8,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 
-
 public class test1 {
     private WebDriver driver;
 
@@ -24,7 +23,6 @@ public class test1 {
         driver.findElement(By.name("q")).sendKeys("YouTube");
         driver.findElement(By.name("btnK")).click();
         driver.get("https://www.youtube.com/?gl=RU&hl=ru");
-
     }
     @After
     public void stop(){
@@ -32,8 +30,5 @@ public class test1 {
         driver = null;
 
     }
-
-
-
 
 }
