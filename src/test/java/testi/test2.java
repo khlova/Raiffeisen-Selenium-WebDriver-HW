@@ -7,9 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-
-
-public class test1 {
+public class test2 {
     private WebDriver driver;
 
     @Before
@@ -20,10 +18,10 @@ public class test1 {
 
     @Test
     public void Test1() {
-        driver.get("https://www.google.com");
-        driver.findElement(By.name("q")).sendKeys("YouTube");
-        driver.findElement(By.name("btnK")).click();
-        driver.get("https://www.youtube.com/?gl=RU&hl=ru");
+        driver.get("http://localhost/litecart/admin/login.php");
+        driver.findElement(By.name("username")).sendKeys("admin");
+        driver.findElement(By.name("password")).sendKeys("admin");
+        driver.findElement(By.name("login")).click();
 
     }
     @After
@@ -32,8 +30,5 @@ public class test1 {
         driver = null;
 
     }
-
-
-
 
 }
