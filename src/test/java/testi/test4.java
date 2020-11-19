@@ -32,7 +32,7 @@ public class test4 {
 
         for (WebElement i : ListEL) {
             assertTrue((i.findElements(By.cssSelector(".sticker"))).size() == 1);
-            System.out.println("У товара есть стикер");
+            System.out.println("РЈ С‚РѕРІР°СЂР° РµСЃС‚СЊ СЃС‚РёРєРµСЂ");
             }
        }
 
