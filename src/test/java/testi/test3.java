@@ -37,7 +37,7 @@ public class test3 {
                 List<WebElement> newEl = driver.findElements(By.cssSelector("li#app-  li a"));
                 newEl.get(j).click();
                 if (El(driver, By.cssSelector("h1"))) {
-                    System.out.println("На страницк есть H1");
+                    System.out.println("На странице есть H1");
                 } else {
                     System.out.println("На странице нет H1");
                 }
